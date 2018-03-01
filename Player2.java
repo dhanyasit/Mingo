@@ -16,9 +16,10 @@ public class Player2 extends Actor
     {
         // Add your action code here.
     }
+
     public Player2(){
-    GreenfootImage img = getImage();
-    img.scale(500,350);
-    setImage(img);
+        GreenfootImage img = getImage();
+        img.scale(500,350);
+        setImage(img);
     }
 }

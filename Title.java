@@ -8,21 +8,26 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Title extends World
 {
-    
-    GreenfootSound choc = new GreenfootSound("choc.mp3");
-   private void Sound(){
+    int count = 0;
+    public static GreenfootSound choc = new GreenfootSound("choc.mp3");
+    private void Sound(){
         if(choc.isPlaying()== false){
-         //dd.setVolume(50);
-         //dd.playLoop();
-         choc.setVolume(50);
-         choc.playLoop();
+            //dd.setVolume(50);
+            //dd.playLoop();
+            choc.setVolume(50);
+            choc.play();
+            count++;
+        }if(Greenfoot.isKeyDown("Enter")){
+            choc.stop();
         }
+       
     }
+
     /**
      * Constructor for objects of class Title.
      * 
      */
-    
+
     public Title()
     {    
 
@@ -42,20 +47,16 @@ public class Title extends World
         logo.setLocation(702,263);
         Enter enter = new Enter();
         addObject(enter,610,511);
-        enter.setLocation(610,511);
-        enter.setLocation(610,511);
-        enter.setLocation(610,511);
-        enter.setLocation(610,511);
-        enter.setLocation(610,511);
-        enter.setLocation(610,511);
-        enter.setLocation(610,511);
+        
         enter.setLocation(392,556);
         How how = new How();
         addObject(how,377,203);
         how.setLocation(182,66);
     }
+
     public void act(){
-        Sound();
-        
+        if(count<2){
+            Sound();
+        }
     }
 }

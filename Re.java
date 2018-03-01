@@ -12,17 +12,18 @@ public class Re extends Actor
      * Act - do whatever the Re wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-   
+
     public void act() 
     {
         if(Greenfoot.mouseClicked(this)){
-          Greenfoot.setWorld(new MyWorld());
-         
+            Greenfoot.setWorld(new MyWorld());
+
         }
     }    
+
     public Re(){
-    GreenfootImage img = getImage();
-    img.scale(150,100);
-    setImage(img);
+        GreenfootImage img = getImage();
+        img.scale(img.getWidth()*1/9,img.getHeight()*1/9);
+        setImage(img);
     }
 }

@@ -16,9 +16,10 @@ public class hey extends Actor
     {
         // Add your action code here.
     }    
+
     public hey(){
-    GreenfootImage img = getImage();
-    img.scale(img.getWidth()*2/3,img.getHeight()*2/3);
-    setImage(img);
+        GreenfootImage img = getImage();
+        img.scale(img.getWidth()*2/3,img.getHeight()*2/3);
+        setImage(img);
     }
 }

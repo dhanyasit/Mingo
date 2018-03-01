@@ -14,18 +14,20 @@ public class Logo extends Actor
      */
     public void act() 
     {
-       dance();
+        dance();
     }
+
     public Logo(){
-    GreenfootImage img = getImage();
-    img.scale(img.getWidth()*1/3,img.getHeight()*1/3);
-    setImage(img);
+        GreenfootImage img = getImage();
+        img.scale(img.getWidth()*1/3,img.getHeight()*1/3);
+        setImage(img);
     }
+
     public void dance(){
-    if(getX()==264){
-        move(0);
-    }else{
-        move(-2);
+        if(getX()==264){
+            move(0);
+        }else{
+            move(-2);
+        }
     }
-}
 }

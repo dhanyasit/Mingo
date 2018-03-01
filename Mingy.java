@@ -11,21 +11,25 @@ public class Mingy extends Actor
     private GreenfootImage Mingo2 = new GreenfootImage("Flamingo2.png");
     public int frame = 1;
     private GreenfootImage[] fla = new GreenfootImage[37];
-    public Mingy(){
     
+
+    public Mingy(){
+
         GreenfootImage image = getImage();
         image.scale(80, 150);
         image.mirrorHorizontally();
         setImage(image);
-        
- 
+
     }
+
     public void act() { 
         move(0);
         movement();
         animateF();
+        
     }
-protected void addedToWorld(World world) {
+
+    protected void addedToWorld(World world) {
         for (int i = 1; i <= 36; i++) {
             fla[i] = new GreenfootImage("Flamingo" + i + ".png");
             fla[i].scale(80, 150);
@@ -42,19 +46,28 @@ protected void addedToWorld(World world) {
         }
         frame++;
     }
+
     public void movement(){
-         if(Greenfoot.isKeyDown("up")){
-          
-            setLocation(550,400);
-}else if(Greenfoot.isKeyDown("right")){
-          
-            move(3);
-}else if(Greenfoot.isKeyDown("left")){
-          
-            move(-3);
-}
-else{
-   setLocation(550,500); 
-}
- }
+        if(Rowlet1.class == null){
+            if(Rowlet2.class == null){
+                if(Rowlet3.class == null){
+                    if(Greenfoot.isKeyDown("up")){
+
+                        setLocation(550,400);
+                    }else if(Greenfoot.isKeyDown("right")){
+
+                        move(3);
+                    }else if(Greenfoot.isKeyDown("left")){
+
+                        move(-3);
+                    }else if(Greenfoot.isKeyDown("down")){
+                        
+                    }
+                    else{
+                        setLocation(550,500); 
+                    }
+                }
+            }
+        }
+    }
 }

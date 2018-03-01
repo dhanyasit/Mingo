@@ -15,14 +15,15 @@ public class Enter extends Actor
     public void act() 
     {
         if(Greenfoot.isKeyDown("enter")){
-          Greenfoot.setWorld(new MyWorld());
-        
-    } 
-}
-    public Enter(){
-    GreenfootImage img = getImage();
-    img.scale(img.getWidth()*1/2,img.getHeight()*1/2);
-    setImage(img);
+            Greenfoot.setWorld(new MyWorld());
+
+        } 
     }
-    
+
+    public Enter(){
+        GreenfootImage img = getImage();
+        img.scale(img.getWidth()*1/2,img.getHeight()*1/2);
+        setImage(img);
+    }
+
 }

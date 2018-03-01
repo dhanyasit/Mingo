@@ -16,9 +16,10 @@ public class Rowr extends Actor
     {
         // Add your action code here.
     }    
+
     public Rowr(){
-    GreenfootImage img = getImage();
-    img.scale(img.getWidth()*1/10,img.getHeight()*1/10);
-    setImage(img);
+        GreenfootImage img = getImage();
+        img.scale(img.getWidth()*1/10,img.getHeight()*1/10);
+        setImage(img);
     }
 }

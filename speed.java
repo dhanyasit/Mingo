@@ -16,9 +16,10 @@ public class speed extends Actor
     {
         // Add your action code here.
     }    
+
     public speed(){
-    GreenfootImage img = getImage();
-    img.scale(img.getWidth()*4/9,img.getHeight()*4/9);
-    setImage(img);
+        GreenfootImage img = getImage();
+        img.scale(img.getWidth()*3/5,img.getHeight()*3/5);
+        setImage(img);
     }
 }
